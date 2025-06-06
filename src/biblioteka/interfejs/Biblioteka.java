@@ -6,7 +6,6 @@ import java.util.List;
 import biblioteka.Autor;
 import biblioteka.Knjiga;
 
-//Javni kljuc za git 34gvrgerhgergergr
 public class Biblioteka implements BibliotekaInterface {
 	
 	//Ovo je implementirano kao ArrayList zbog cestog dodavanja i pretrage
