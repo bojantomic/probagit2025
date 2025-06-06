@@ -9,6 +9,7 @@ import biblioteka.Knjiga;
 //Javni kljuc za git 34gvrgerhgergergr
 public class Biblioteka implements BibliotekaInterface {
 	
+	//Ovo je implementirano kao ArrayList zbog cestog dodavanja i pretrage
 	private List<Knjiga> knjige = new ArrayList<Knjiga>();
 
 	@Override
