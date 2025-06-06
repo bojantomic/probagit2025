@@ -45,9 +45,15 @@ public class Biblioteka implements BibliotekaInterface {
 		
 		List<Knjiga> rezultati = new ArrayList<Knjiga>();
 		
-		for(Knjiga k: knjige)
-			if (k.getNaslov().toUpperCase().contains(naslov.toUpperCase()))
-				rezultati.add(k);
+		if (naslov != null)
+			for(Knjiga k: knjige)
+				if (k.getNaslov().toUpperCase().contains(naslov.toUpperCase()))
+					rezultati.add(k);
+		
+		if (autor != null)
+			for(Knjiga k: knjige)
+				if (k.getAutori().contains(autor))
+					rezultati.add(k);
 		
 		return rezultati;
 	}
